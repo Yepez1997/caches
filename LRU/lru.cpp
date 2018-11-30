@@ -1,5 +1,6 @@
 #include "lru.h"
 
+/**** TO DO ADD TEMPLATES ****/
 int main() {
 
     /* vars */

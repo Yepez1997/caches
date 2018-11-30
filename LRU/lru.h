@@ -125,6 +125,7 @@ using namespace std;
         cache_hits = hits;
     }
 
+    /* get hits */
     int LRU::getHits(void){
         return cache_hits;
     }
@@ -168,5 +169,7 @@ using namespace std;
         }
         cout << "###################" << endl;
     }
+
+
 
 
