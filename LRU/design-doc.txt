@@ -1,0 +1,34 @@
+    Design Document for LRU
+
+    --------------------------------------------------------
+    Author : Aureliano Yepez
+    Date : November 30th, 2018
+    History:
+    --------------------------------------------------------
+
+    Purpose:
+
+        The purpose of LRU is to implement the Least Recently Used
+        Algorithm, the algorithm will:
+
+                [a] Use effective data structures to insert/update/delete into "cache"
+
+
+    Outline:
+        In order to implement an effective LRU cache algorithm, we must design a cache that will
+        allow the fastest and most optimal insert/update/delete/get. A unordered map will allow us to
+        get/delete in O(1) time by indexing to the proper key.  That being said, we must implement
+        the functions :
+
+                    getValue -- gets the key in the cache
+                    insertValue -- inserts the value into the cache
+                    updateValue -- updates the nth node in the
+                    deleteValue -- deletes the value from the cache
+                    cacheSize -- size of the cache
+
+
+    File Structure:
+
+        lru.cpp -- class file
+        lru.h -- header file
+
