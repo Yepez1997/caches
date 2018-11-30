@@ -1,2 +1,2 @@
 # caches
-Implementation of LRU cache, MRU cache, Clock Cycle Algorithms 
+Implementation of LRU cache, MRU cache, Clock Cycle Algorithms in C++ 
