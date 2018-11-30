@@ -1,10 +1,11 @@
 #include "lru.h"
 
-/**** TO DO ADD TEMPLATES ****/
+/**** TO DO ADD TEMPLATES FOR VALUES ****/
 int main() {
 
     /* vars */
     int size = 5;
+
     map<int, int> lru = {};
     int index = 0;
     LRU lru_cache{size, lru, index};
@@ -19,11 +20,7 @@ int main() {
         lru_cache.insertCache(v);
     }
 
+
     lru_cache.prettyPrintCache();
-    cout << "Cache Hits: " << lru_cache.getHits() << endl;
-
-    // need to print out summary
-
-
 
 }

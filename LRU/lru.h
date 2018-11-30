@@ -83,6 +83,7 @@ using namespace std;
     }
 
     /* deletes value from cache */
+
     void LRU::deleteMinCache(int key) {
         // want to delete the min of all elements for LRU
         int min = 0;
@@ -158,16 +159,27 @@ using namespace std;
             updateCachedIndex(key, value);
             cacheHitCount();
         }
+        // set cache misses ?
     }
 
-    /* Preety Print needs fix */
+    /* Pretty Print needs fix */
     void LRU::prettyPrintCache(void){
+        cout  << "||||||||||||||||||||" << endl;
+        cout << " " << endl;
+        string concated("");
         cout << "****** Cache ******" << endl;
         for (auto c : cache) {
             cout << "###################" << endl;
+            concated += to_string(c.second) + " ";
             cout << "|" << "Index: " << c.first << " Value: "<< c.second << "|" << endl;
         }
         cout << "###################" << endl;
+        cout << "-------------------" << endl;
+        cout << "Cache Hits: " << getHits() << endl;
+        cout << " " << endl;
+        cout << "Left in Cache: " << concated << endl;
+        cout << " " << endl;
+        cout  << "||||||||||||||||||||" << endl;
     }
 
 
